@@ -771,7 +771,7 @@ elif [ "$BRmode" = "1" ] || [ "$BRmode" = "2" ]; then
       BRfiletype="bzip2 compressed"
       BRreadopts="tfj"
       BR_MAIN_OPTS="xvpfj"
-    elif echo "$BRtype" | grep -q -w XZ && [ -n $BRmcore ]; then
+    elif echo "$BRtype" | grep -q -w XZ && [ -n "$BRmcore" ]; then
       BRfiletype="pixz compressed"
       BRreadopts="-I pixz -tf"
       BR_MAIN_OPTS="-I pixz -xvpf"
